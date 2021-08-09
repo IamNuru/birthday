@@ -8,22 +8,37 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pen2.css">
     <link rel="stylesheet" href="pen1.css">
+    <link rel="shortcut icon" href="nuru.ico" type="image/x-icon" />
+
 </head>
 <body>
     <div class="header">
         <h3 class="hurray">Hurray is My &nbsp;</h3>
         <h3 class="today">Birthday</h3>
-        <img src="1.jpg" alt="" class="header-img">
+        <img src="nuru.webp" alt="" class="header-img">
     </div>
     <canvas id="screen"></canvas>
     <div class="" style="width:100%; display:flex; justify-content:center">
         <div class="bg-image" style="display:grid; justify-content:center">
              <canvas id="c"></canvas>
-             <div class="message">Wanna drop some birthday gift for your boy?. Kindly send momo via 0248921190</div>
+             <div class="message">
+                 <audio controls autoplay loop id="player">
+                    <source src="birthday.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+                 Wanna drop some birthday gift for your boy?. Kindly send momo via 0248921190
+            </div>
         </div>
     </div>
     
     <script src="pen2.js"></script>
     <script src="pen1.js"></script>
+    <script>
+        document.addEventListener('click', musicPlay);
+        function musicPlay() {
+            document.getElementById('player').play();
+            document.removeEventListener('click', musicPlay);
+        }
+    </script>
 </body>
 </html>
