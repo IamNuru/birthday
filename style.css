@@ -11,18 +11,12 @@
     margin-bottom:20px;
     text-align: center;
 }
-.header-img{
-    width:50px;
-    height:40px;
-    border-radius: 50%;
-    margin:0 5px;
-}
+
 .bg-image{
   background-image: url('nurudeen.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 30px 10px 150px 10px;
   max-width:350px;
 }
 /** ***/
@@ -36,7 +30,6 @@
     text-align: center;
     height: 100%;
     margin-top: 15px;
-    padding: 5px;
     color: #efe375;
     font-size: 1.05rem;
     font-style: italic;
